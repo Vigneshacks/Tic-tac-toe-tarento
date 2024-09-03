@@ -1,0 +1,62 @@
+
+
+body {
+  font-family: "Century Gothic", Futura, sans-serif;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.board-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cell {
+  border: 1px solid #999;
+  float: left;
+  font-size: 40px;
+  height: 80px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+}
+
+.cell--highlighted {
+  background-color: red;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.game-status,
+.restart-btn {
+  margin-top: 10px;
+}
+
+.restart-btn {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.restart-btn:active {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.restart-btn:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.restart-btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
